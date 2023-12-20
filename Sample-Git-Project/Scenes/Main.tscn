@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://da52yi2cm8ydt"]
+
+[ext_resource type="Texture2D" uid="uid://b0u2urmfb6mo8" path="res://icon.svg" id="1_4i8e2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3le21"]
+size = Vector2(124.255, 122.097)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(538, 228)
+texture = ExtResource("1_4i8e2")
+
+[node name="IconFloor" type="Sprite2D" parent="."]
+position = Vector2(534.75, 669)
+scale = Vector2(10.0273, 0.894532)
+texture = ExtResource("1_4i8e2")
+
+[node name="Hitbox" type="Area2D" parent="IconFloor"]
+position = Vector2(601, 45.8368)
+scale = Vector2(10.8906, 0.310597)
+metadata/_edit_lock_ = true
+
+[node name="Hitbox Size" type="CollisionShape2D" parent="IconFloor/Hitbox"]
+position = Vector2(-55.1734, -151.627)
+scale = Vector2(0.0918221, 3.21961)
+shape = SubResource("RectangleShape2D_3le21")
+metadata/_edit_lock_ = true
+
+[node name="IconWall" type="Sprite2D" parent="."]
+position = Vector2(-57, 322.5)
+scale = Vector2(1, 6.41406)
+texture = ExtResource("1_4i8e2")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Hitbox" type="Area2D" parent="IconWall"]
+position = Vector2(601, 45.8368)
+scale = Vector2(10.8906, 0.310597)
+
+[node name="Hitbox Size" type="CollisionShape2D" parent="IconWall/Hitbox"]
+position = Vector2(-55.6442, -151.627)
+scale = Vector2(0.0918221, 3.21961)
+shape = SubResource("RectangleShape2D_3le21")
+
+[node name="IconWall2" type="Sprite2D" parent="."]
+position = Vector2(1122, 306)
+scale = Vector2(1, 6.41406)
+texture = ExtResource("1_4i8e2")
+metadata/_edit_group_ = true
+
+[node name="Hitbox" type="Area2D" parent="IconWall2"]
+position = Vector2(601, 45.8368)
+scale = Vector2(10.8906, 0.310597)
+
+[node name="Hitbox Size" type="CollisionShape2D" parent="IconWall2/Hitbox"]
+position = Vector2(-55.6442, -151.627)
+scale = Vector2(0.0918221, 3.21961)
+shape = SubResource("RectangleShape2D_3le21")

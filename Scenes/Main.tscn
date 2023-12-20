@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://da52yi2cm8ydt"]
+[gd_scene load_steps=4 format=3 uid="uid://da52yi2cm8ydt"]
 
 [ext_resource type="Texture2D" uid="uid://b0u2urmfb6mo8" path="res://icon.svg" id="1_4i8e2"]
+[ext_resource type="Script" path="res://Code/Main.gd" id="1_c7o7h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3le21"]
 size = Vector2(124.255, 122.097)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_c7o7h")
 
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(538, 228)
